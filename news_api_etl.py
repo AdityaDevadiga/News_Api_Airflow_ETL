@@ -4,9 +4,9 @@ import s3fs
 
 def fetch_news_headlines():
     # Specify your API key, S3 bucket name, and S3 object key here
-    api_key = 'd66eb54455ef4dc28977d82ad686fcbd'
-    s3_bucket_name = 'aditya-airflow-youtube-ubucket'
-    s3_object_key = 'aditya-airflow-youtube-ubucket/news_headlines.csv'
+    api_key = '*************************'
+    s3_bucket_name = '*********************t'
+    s3_object_key = 'bucket_name/news_headlines.csv'
 
     base_url = 'https://newsapi.org/v2/top-headlines'
 
