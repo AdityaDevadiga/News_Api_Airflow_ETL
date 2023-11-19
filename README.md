@@ -12,4 +12,13 @@ Before running the code, ensure you have the following prerequisites installed:
 - Apache Airflow
 - Necessary Python packages (requests, pandas, s3fs, etc.)
 
+## Note on SSH Key Permissions
+
+If you encounter the "UNPROTECTED PRIVATE KEY FILE" error while trying to connect to your EC2 instance, it is likely due to incorrect permissions on your private key file.
+
+You can fix this issue by adjusting the permissions using the following commands:
+
+```bash
+icacls your_downloaded_key_filename.pem /inheritance:r
+icacls your_downloaded_key_filename.pem /grant:r "%USERNAME%:R"
 
